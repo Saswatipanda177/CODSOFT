@@ -1,98 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="My landing page" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
-integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+     <title> My Calculator</title>
     <link rel="stylesheet" href="style.css">
-</head>
-
+   </head>
 <body>
-    <div class="container">
-        <div class="wave">
-            <img src="bg.png" alt="">
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Our Products</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Types</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-            <img src="logo.png" alt="">
-        </nav>
-
-        <div class="main-content">
-
-            <div class="image-pista">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img2.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img3.png" alt=""></div>
-                    </div> 
-                </div>
-            </div>
-            <div class="main-text">
-                <h1>The PistaFusion</h1>
-                <p>Where Tradition Meets Taste</p>
-                <button>Get to Know Us</button>
-            </div>
-        </div>
-
-        <div class="right">
-            <div class="box">
-                <div class="image">
-                    <img src="img4.png" alt="">
-                </div>
-                <div class="inner-box">
-                    <h3>100% Organic</h3>
-                    <p>Pure Organic Excellence</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="img5.png" alt="">
-                </div>
-                <div class="inner-box">
-                    <h3>Not Expensive</h3>
-                    <p>Affordability Redefined</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="img6.png" alt="">
-                </div>
-                <div class="inner-box">
-                    <h3>Super Healthy</h3>
-                    <p>Uncompromising Health</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="social-links">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="far fa-envelope"></i>
-        </div>
-    </div>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          loop: true,
-        });
-      </script>
+<div class="bubbles">
+  <span class="one"></span>
+  <span class="two"></span>
+  <span class="three"></span>
+  <span class="four"></span>
+  <span class="five"></span>
+  <span class="six"></span>
+  <span class="seven"></span>
+  <span class="seven"></span>
+</div>
+<div class="bubbles">
+  <span class="one"></span>
+  <span class="two"></span>
+  <span class="three"></span>
+  <span class="four"></span>
+  <span class="five"></span>
+  <span class="six"></span>
+  <span class="seven"></span>
+  <span class="seven"></span>
+</div>
+<div class="bubbles">
+  <span class="one"></span>
+  <span class="two"></span>
+  <span class="three"></span>
+  <span class="four"></span>
+  <span class="five"></span>
+  <span class="six"></span>
+  <span class="seven"></span>
+  <span class="seven"></span>
+</div>
+<div class="bubbles">
+  <span class="one"></span>
+  <span class="two"></span>
+  <span class="three"></span>
+  <span class="four"></span>
+  <span class="five"></span>
+  <span class="six"></span>
+  <span class="seven"></span>
+  <span class="seven"></span>
+</div>
+ <div class="container">
+   <form action="#" name="forms">
+     <input type="text" name="answer">
+     <div class="buttons">
+       <input type="button" value="AC" onclick="forms.answer.value = ''">
+       <input type="button" value="DEL" onclick="forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)">
+       <input type="button" value="%" onclick="forms.answer.value += '%'">
+       <input type="button" value="/" onclick="forms.answer.value += '/'">
+     </div>
+     <div class="buttons">
+       <input type="button" value="7" onclick="forms.answer.value += '7'">
+       <input type="button" value="8" onclick="forms.answer.value += '8'">
+       <input type="button" value="9" onclick="forms.answer.value += '9'">
+       <input type="button" value="*" onclick="forms.answer.value += '*'">
+     </div>
+     <div class="buttons">
+       <input type="button" value="4" onclick="forms.answer.value += '4'">
+       <input type="button" value="5" onclick="forms.answer.value += '5'">
+       <input type="button" value="6" onclick="forms.answer.value += '6'">
+       <input type="button" value="-" onclick="forms.answer.value += '-'">
+     </div>
+     <div class="buttons">
+       <input type="button" value="1" onclick="forms.answer.value += '1'">
+       <input type="button" value="2" onclick="forms.answer.value += '2'">
+       <input type="button" value="3" onclick="forms.answer.value += '3'">
+       <input type="button" value="+" onclick="forms.answer.value += '+'">
+     </div>
+     <div class="buttons">
+       <input type="button" value="0"  onclick="forms.answer.value += '0'">
+       <input type="button" value="00" onclick="forms.answer.value += '00'">
+       <input type="button" value="." onclick="forms.answer.value += '.'">
+       <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value)">
+     </div>
+   </form>
+ </div>
 </body>
-
 </html>
