@@ -91,6 +91,7 @@ nav ul a:hover:after{
     background-color: #494234;
     color: white;
     cursor: pointer;
+    transition: 0.5s;
 }
 .swiper{
     width: 20rem;
